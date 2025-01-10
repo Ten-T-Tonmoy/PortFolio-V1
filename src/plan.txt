@@ -1,0 +1,77 @@
+/my-portfolio  
+│── /public  
+│   ├── favicon.ico  
+│   ├── profile.jpg (or avatar)  
+│   ├── images/ (other assets like blog thumbnails)  
+│── /src  
+│   ├── /components  
+│   │   ├── Navbar.jsx  
+│   │   ├── Footer.jsx  
+│   │   ├── DarkModeToggle.jsx  
+│   │   ├── Card.jsx (for blog, project previews, etc.)  
+│   │   ├── SocialIcons.jsx  
+│   ├── /pages  
+│   │   ├── Home.jsx  
+│   │   ├── Blogs.jsx  
+│   │   ├── Projects.jsx  
+│   │   ├── Contact.jsx  
+│   ├── /hooks  
+│   │   ├── useDarkMode.js (for dark mode persistence)  
+│   ├── /styles  
+│   │   ├── globals.css (Tailwind base styles)  
+│   ├── App.jsx  
+│   ├── main.jsx (or index.js for CRA)  
+│── tailwind.config.js  
+│── package.json  
+│── postcss.config.js  
+│── vite.config.js (if using Vite)  
+
+
+
+Color Palette for Tailwind
+Light Mode:
+
+Background: #f3f3f3 (light gray)
+Text: #1a1a1a (dark gray/black)
+Accent: #ececec (soft white)
+Card Background: #ffffff
+Dark Mode:
+
+Background: #121212 (deep black)
+Text: #e4e4e4 (off-white)
+Accent: #1e1e1e (grayish-black)
+Card Background: #222222
+
+
+
+Development Roadmap (Step by Step)
+Project Setup
+
+✅Initialize a React project using Vite or CRA
+✅Install Tailwind CSS and configure it
+Set up Tailwind’s dark mode (class strategy in tailwind.config.js)
+Global Styling & Dark Mode Toggle
+
+Create a global CSS file and apply Tailwind classes
+Implement a dark mode toggle with useState and localStorage
+Basic Layout & Components
+
+Build a Navbar with sections: Work, Projects, Blogs, Contact
+Implement the DarkModeToggle button
+Create Card Components for blogs and projects
+Home Page & Profile Section
+
+Add the profile section with text and animations
+Implement the rotating globe effect (using a library like three.js or an SVG animation)
+Blog & Project Pages
+
+Design separate pages for blogs and projects
+Fetch or store data in JSON files for dynamic rendering
+Final Styling & Responsiveness
+
+Adjust responsiveness for mobile, tablet, and desktop
+Add hover effects, smooth animations, and transitions
+Deploy
+
+Optimize performance
+Deploy using Vercel or Netlify
